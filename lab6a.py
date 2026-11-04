@@ -10,9 +10,11 @@
 
 def buildtheSet(divisor):
     s=set()
-    for i in range(101):
+    for i in range(1,101):
         if i%divisor==0:
             s.add(i)
+        else:
+            i=i+1
     return s
 def main():
 
